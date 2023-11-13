@@ -1,0 +1,40 @@
+server:
+  port: 9292
+
+
+
+spring:
+  data:
+    cassandra:
+      keyspace-name: main
+      username: SZsZOpTFqRvkWhxdRTNFssWg
+      password: 4GQ7-Y7rJy4R6EuO0edwZCW+rwmYAPtlJSIA+F4hsqSs.vImhXlY6DRijnWx5CTe5vybp62dnmuQO7sCPZL.qoPo8OGxBibWnO8NtrX3.RI2C0y2KJokT_gWcczj,ten
+      schema-action: recreate-drop-unused
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+  application:
+    name: betterreads
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Iv1.f52420142fc4782c
+            client-secret: 6c69d2dcc209a54595e87e2f7e194783226e2392
+  main:
+    allow-circular-references: true
+
+datastax.astra:
+  secure-connect-bundle: secure-connect.zip
+
+astra:
+  db:
+    id: 618ddc0e-6581-4faf-8497-b55051b65a00
+    region: asia-south1
+    keyspace: main
+    application:
+      token: AstraCS:SZsZOpTFqRvkWhxdRTNFssWg:eb765ac746e99f1679bd7fea0cf2b9831c4d77a87f210779dd8b6ede5c06262a
+
